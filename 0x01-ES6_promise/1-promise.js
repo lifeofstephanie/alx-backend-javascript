@@ -1,9 +1,9 @@
 export default function getFullResponseFromAPI(success) {
-  return((response, reject) =>{
+  return((response, reject) => {
     if (success) {
-      response({status:200, body:'Success'});
+      response({ status:200, body:'Success' });
     } else {
-      reject(new Error('Reject API'));
+      reject(new Error('The fake API is not working currently'));
     }
   });
 }
